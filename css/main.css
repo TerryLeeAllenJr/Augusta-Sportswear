@@ -1,8 +1,18 @@
 /* Main Navigation */
-.navbar .container div ul {
-  display: block; }
-  .navbar .container div ul li {
-    float: right; }
+.nav li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  float: right;
+  line-height: 40px; }
+  .nav li a {
+    color: white;
+    -webkit-transition: background 0.25s linear;
+    -moz-transition: background 0.25s linear;
+    -ms-transition: background 0.25s linear;
+    -o-transition: background 0.25s linear;
+    transition: background 0.25s linear; }
+    .nav li a:hover {
+      background: #90b912; }
 
 /* Widget Header */
 .jumbotron.header {
@@ -99,6 +109,25 @@
     text-transform: uppercase;
     text-align: center;
     font-weight: bold; }
+  .app-sidebar .sidebar-steps {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: left; }
+    .app-sidebar .sidebar-steps li {
+      font-family: "Open Sans", sans-serif; }
+      .app-sidebar .sidebar-steps li a {
+        color: #90b912;
+        text-decoration: none;
+        font-size: 1.8em; }
+    .app-sidebar .sidebar-steps span {
+      display: block;
+      width: 100%;
+      color: #282828;
+      font-family: "Open Sans Condensed", sans-serif; }
+    .app-sidebar .sidebar-steps span:before {
+      font-size: 1.3em;
+      content: "   > "; }
 
 .app-selection-container {
   padding: 5px; }

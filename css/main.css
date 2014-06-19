@@ -1,0 +1,153 @@
+/* Main Navigation */
+.navbar .container div ul {
+  display: block; }
+  .navbar .container div ul li {
+    float: right; }
+
+/* Widget Header */
+.jumbotron.header {
+  padding: 100px 0 50px 0;
+  background: white;
+  border-bottom: 1px solid #d5dbe0;
+  -webkit-box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.4); }
+  .jumbotron.header img {
+    width: 100%; }
+
+.breadcrumbs {
+  color: white;
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif; }
+  .breadcrumbs span {
+    font-size: 1.4em;
+    padding-right: 2px; }
+  .breadcrumbs div {
+    float: left;
+    top: 5px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    margin: 5px 0 0 0;
+    padding: 0 0 0 12px;
+    position: relative;
+    min-width: 100px;
+    background: #d5dbe0;
+    -webkit-transition: background 0.25s linear;
+    -moz-transition: background 0.25s linear;
+    -ms-transition: background 0.25s linear;
+    -o-transition: background 0.25s linear;
+    transition: background 0.25s linear; }
+  .breadcrumbs div:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 23px solid transparent;
+    border-left: 8px solid #ddd;
+    border-bottom: 23px solid transparent;
+    position: absolute;
+    right: -7px;
+    z-index: 10;
+    -webkit-transition: border-left 0.25s linear;
+    -moz-transition: border-left 0.25s linear;
+    -ms-transition: border-left 0.25s linear;
+    -o-transition: border-left 0.25s linear;
+    transition: border-left 0.25s linear; }
+  .breadcrumbs div:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 23px solid transparent;
+    border-left: 9px solid #fff;
+    border-bottom: 23px solid transparent;
+    position: absolute;
+    right: -8px;
+    z-index: 10;
+    -webkit-transition: border-left 0.25s linear;
+    -moz-transition: border-left 0.25s linear;
+    -ms-transition: border-left 0.25s linear;
+    -o-transition: border-left 0.25s linear;
+    transition: border-left 0.25s linear; }
+  .breadcrumbs div.active, .breadcrumbs div.active:hover {
+    background: #90b912; }
+  .breadcrumbs div:hover {
+    background: #b5e516; }
+  .breadcrumbs div.active:after, .breadcrumbs div.active:hover:after {
+    border-left: 8px solid #90b912; }
+  .breadcrumbs div:hover:after {
+    border-left: 8px solid #b5e516; }
+
+/*Widget Body */
+.app-panel h3 {
+  color: #90b912;
+  font-size: 1.1vw;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  margin-left: 5px; }
+
+.app-sidebar {
+  border-right: 1px solid #d5dbe0; }
+  .app-sidebar h4 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid #d5dbe0;
+    font-face: "Open Sans", sans-serif;
+    font-size: .9vw;
+    color: #1f87c7;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold; }
+
+.app-selection-container {
+  padding: 5px; }
+
+.app-selection-panel {
+  padding: 10px;
+  background: #d5dbe0; }
+
+.app-selection-data {
+  border: 1px solid #d5dbe0;
+  background: white; }
+  .app-selection-data img {
+    width: 100%; }
+  .app-selection-data h4 {
+    display: block;
+    text-align: center; }
+
+.app-selection-data:hover {
+  border: 2px solid #1f87c7; }
+
+.next-button {
+  margin-top: 20px;
+  display: block;
+  font-size: 1vw;
+  color: white;
+  background: #1f87c7;
+  text-align: center;
+  min-height: 50px;
+  line-height: 50px; }
+
+.next-button:after {
+  content: "  >>"; }
+
+.disabled {
+  cursor: no-drop; }
+
+/* Custom Media Queries */
+@media only screen and (min-width: 1199px) {
+  .border-right {
+    border-right: 1px solid #d5dbe0; }
+
+  .breadcrumbs {
+    font-size: 1vw; } }
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* tablets and desktop */
+  .breadcrumbs {
+    font-size: 3vw; } }
+@media only screen and (max-width: 767px) {
+  .breadcrumbs {
+    font-size: 4vw; } }
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */ }

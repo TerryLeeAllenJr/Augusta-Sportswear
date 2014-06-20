@@ -134,7 +134,8 @@
 
 .app-selection-data {
   border: 1px solid #d5dbe0;
-  background: white; }
+  background: white;
+  min-height: 270px; }
   .app-selection-data img {
     width: 100%; }
   .app-selection-data h4 {
@@ -158,6 +159,7 @@
   content: "  >>"; }
 
 .disabled {
+  background: #d5dbe0;
   cursor: no-drop; }
 
 /* Custom Media Queries */
@@ -172,7 +174,10 @@
   .breadcrumbs {
     font-size: 3vw; } }
 @media only screen and (max-width: 767px) {
-  .breadcrumbs {
-    font-size: 4vw; } }
+  .breadcrumbs, .app-sidebar h4, .app-panel h3, .sidebar-steps li, .sidebar-steps li span, .next-button {
+    font-size: 4vw; }
+
+  .app-selection-panel {
+    margin-bottom: 10px; } }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   /* portrait phones */ }

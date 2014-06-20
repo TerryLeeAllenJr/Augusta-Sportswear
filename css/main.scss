@@ -117,6 +117,7 @@ $font-sans-condensed: 'Open Sans Condensed', sans-serif;
 
 .app-panel h3 {
   color: $color-green;
+
   font-size: 1.1vw;
   font-family: $font-sans;
   text-transform: uppercase;
@@ -172,6 +173,7 @@ $font-sans-condensed: 'Open Sans Condensed', sans-serif;
 .app-selection-data {
   border: 1px solid $color-light-grey;
   background: $color-white;
+  min-height: 270px;
   img {
     width: 100%;
   }
@@ -201,6 +203,7 @@ $font-sans-condensed: 'Open Sans Condensed', sans-serif;
 }
 
 .disabled {
+  background:$color-light-grey;
   cursor: no-drop;
 }
 
@@ -223,9 +226,9 @@ $font-sans-condensed: 'Open Sans Condensed', sans-serif;
 }
 
 @media only screen and (max-width: 767px) {
-  .breadcrumbs {
-    font-size: 4vw;
-  }
+  .breadcrumbs, .app-sidebar h4, .app-panel h3, .sidebar-steps li, .sidebar-steps li span, .next-button{font-size: 4vw;}
+  .app-selection-panel{margin-bottom:10px;}
+
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {

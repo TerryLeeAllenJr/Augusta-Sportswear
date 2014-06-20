@@ -13,7 +13,15 @@ switch($_GET['data']){
             1=>array(
                 'product'=>'Jersey / Short',
                 'img'=>'product-jersey-short.jpg'
-            )
+            ),
+            2=>array(
+                'product'=>'Test Product 3',
+                'img'=>'no-image.jpg'
+            ),
+            3=>array(
+                'product'=>'Test Product 4',
+                'img'=>'no-image.jpg'
+    )
         ));
         break;
 }

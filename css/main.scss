@@ -149,11 +149,12 @@ $font-sans-condensed: 'Open Sans Condensed', sans-serif;
     }
     span {
       display: block;
-      width: 100%;
+      width: 99%;
+      margin-left:1%;
       color: $color-dark-grey;
       font-family: $font-sans-condensed;
     }
-    span:before{content: "  + ";}
+    span:before{content:"+ ";}
   }
 }
 

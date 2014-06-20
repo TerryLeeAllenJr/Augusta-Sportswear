@@ -118,11 +118,12 @@
       font-size: .8vw; }
     .app-sidebar .sidebar-steps span {
       display: block;
-      width: 100%;
+      width: 99%;
+      margin-left: 1%;
       color: #282828;
       font-family: "Open Sans Condensed", sans-serif; }
     .app-sidebar .sidebar-steps span:before {
-      content: "  + "; }
+      content: "+ "; }
 
 .app-selection-container {
   padding: 15px; }

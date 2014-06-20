@@ -1,4 +1,3 @@
-
 $color-dark-grey: #282828;
 $color-light-grey: #d5dbe0;
 $color-green: #90b912;
@@ -9,13 +8,13 @@ $color-menu-bg: #f0f1f4;
 $font-sans: 'Open Sans', sans-serif;
 $font-sans-condensed: 'Open Sans Condensed', sans-serif;
 
-@mixin box-shadow($color){
+@mixin box-shadow($color) {
   border-bottom: 1px solid $color-light-grey;
   -webkit-box-shadow: 0 2px 10px 2px $color;
   box-shadow: 0 2px 10px 2px $color;
 }
 
-@mixin background-transition($rule, $speed, $easing){
+@mixin background-transition($rule, $speed, $easing) {
   -webkit-transition: $rule $speed $easing;
   -moz-transition: $rule $speed $easing;
   -ms-transition: $rule $speed $easing;
@@ -25,52 +24,56 @@ $font-sans-condensed: 'Open Sans Condensed', sans-serif;
 
 /* Main Navigation */
 .nav {
-  li{
+  li {
     font-family: $font-sans;
     font-size: 1.2em;
-    float:right;
-    line-height:40px;
+    float: right;
+    line-height: 40px;
 
-    a{
+    a {
       color: $color-white;
-      @include background-transition(background,0.25s, linear);
-      &:hover{background:$color-green;}
+      @include background-transition(background, 0.25s, linear);
+      &:hover {
+        background: $color-green;
+      }
     }
   }
 }
 
 /* Widget Header */
-.jumbotron.header{
+.jumbotron.header {
   padding: 100px 0 50px 0;
   background: $color-white;
-  @include box-shadow(rgba(0,0,0,.4));
+  @include box-shadow(rgba(0, 0, 0, .4));
 
-  img{width:100%;}
+  img {
+    width: 100%;
+  }
 }
 
-.breadcrumbs{
-  color:$color-white;
+.breadcrumbs {
+  color: $color-white;
   font-size: 1vw;
   text-transform: uppercase;
   font-family: $font-sans;
-  span{
-    font-size:1.4em;
-    padding-right:2px;
+  span {
+    font-size: 1.4em;
+    padding-right: 2px;
   }
-  div{
+  div {
     float: left;
-    top:5px;
+    top: 5px;
     height: 46px;
     line-height: 46px;
-    text-align:center;
+    text-align: center;
     margin: 5px 0 0 0;
     padding: 0 0 0 12px;
     position: relative;
     min-width: 100px;
-    background:$color-light-grey;
-    @include background-transition(background,0.25s, linear);
+    background: $color-light-grey;
+    @include background-transition(background, 0.25s, linear);
   }
-  div:after{
+  div:after {
     content: "";
     width: 0;
     height: 0;
@@ -80,9 +83,9 @@ $font-sans-condensed: 'Open Sans Condensed', sans-serif;
     position: absolute;
     right: -7px;
     z-index: 10;
-    @include background-transition(border-left,0.25s, linear);
+    @include background-transition(border-left, 0.25s, linear);
   }
-  div:before{
+  div:before {
     content: "";
     width: 0;
     height: 0;
@@ -94,15 +97,17 @@ $font-sans-condensed: 'Open Sans Condensed', sans-serif;
     z-index: 10;
     @include background-transition(border-left, 0.25s, linear);
   }
-  div.active, div.active:hover{background:$color-green}
+  div.active, div.active:hover {
+    background: $color-green
+  }
 
-  div:hover{
+  div:hover {
     background: $color-light-green;
   }
-  div.active:after, div.active:hover:after{
+  div.active:after, div.active:hover:after {
     border-left: 8px solid $color-green;
   }
-  div:hover:after{
+  div:hover:after {
     border-left: 8px solid $color-light-green;
   }
 
@@ -110,108 +115,116 @@ $font-sans-condensed: 'Open Sans Condensed', sans-serif;
 
 /*Widget Body */
 
-.app-panel h3{
-  color:$color-green;
+.app-panel h3 {
+  color: $color-green;
   font-size: 1.1vw;
   font-family: $font-sans;
   text-transform: uppercase;
-  margin-left:5px;
 }
-.app-sidebar{
+
+.app-sidebar {
   border-right: 1px solid $color-light-grey;
-  h4{
-    display:block;
-    margin:0;
-    padding:0;
-    width:100%;
+  h4 {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 0;
+    width: 100%;
     border-bottom: 1px solid $color-light-grey;
     font-face: $font-sans;
-    font-size: .9vw;
+    font-size: 1vw;
     color: $color-light-blue;
     text-transform: uppercase;
-    text-align:center;
-    font-weight:bold;
+    text-align: left;
+    font-weight: bold;
   }
 
-  .sidebar-steps{
-    padding:0;
-    margin:0;
-    list-style-type:none;
-    text-align:left;
-    li{
-
+  .sidebar-steps {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+    li {
       font-family: $font-sans;
-
-      a{
-        color: $color-green;
-        text-decoration:none;
-        font-size:1.8em;
-
-      }
+      font-size: .8vw;
     }
-    span{
-      display:block;
-      width:100%;
+    span {
+      display: block;
+      width: 100%;
       color: $color-dark-grey;
       font-family: $font-sans-condensed;
     }
-    span:before{font-size: 1.3em;content:"   > ";}
+    span:before{content: "  + ";}
   }
 }
 
-
-.app-selection-container{
-  padding:5px;
+.app-selection-container {
+  padding: 15px;
 }
-.app-selection-panel{
 
-  padding:10px;
-  background:$color-light-grey;
+.app-selection-panel {
+
+  padding: 10px;
+  background: $color-light-grey;
 
 }
-.app-selection-data{
+
+.app-selection-data {
   border: 1px solid $color-light-grey;
-  background:$color-white;
-  img{width:100%;}
-  h4{display:block;text-align:center;}
+  background: $color-white;
+  img {
+    width: 100%;
+  }
+  h4 {
+    display: block;
+    text-align: center;
+  }
 }
-.app-selection-data:hover{
+
+.app-selection-data:hover {
   border: 2px solid $color-light-blue;
 }
 
-
-.next-button{
-  margin-top:20px;
-  display:block;
-  font-size:1vw;
-  color:$color-white;
+.next-button {
+  margin-top: 20px;
+  display: block;
+  font-size: 1vw;
+  color: $color-white;
   background: $color-light-blue;
-  text-align:center;
-  min-height:50px;
+  text-align: center;
+  min-height: 50px;
   line-height: 50px;
 }
-.next-button:after{
+
+.next-button:after {
   content: "  >>";
 }
 
-
-.disabled{
+.disabled {
   cursor: no-drop;
 }
 
 /* Custom Media Queries */
 
 @media only screen and (min-width: 1199px) {
-  .border-right{border-right: 1px solid $color-light-grey;}
-  .breadcrumbs{font-size: 1vw;}
+  .border-right {
+    border-right: 1px solid $color-light-grey;
+  }
+  .breadcrumbs {
+    font-size: 1vw;
+  }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   /* tablets and desktop */
-  .breadcrumbs{font-size: 3vw;}
+  .breadcrumbs {
+    font-size: 3vw;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-  .breadcrumbs{font-size: 4vw;}
+  .breadcrumbs {
+    font-size: 4vw;
+  }
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {

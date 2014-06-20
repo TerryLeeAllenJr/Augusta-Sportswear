@@ -92,22 +92,21 @@
   color: #90b912;
   font-size: 1.1vw;
   font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  margin-left: 5px; }
+  text-transform: uppercase; }
 
 .app-sidebar {
   border-right: 1px solid #d5dbe0; }
   .app-sidebar h4 {
     display: block;
-    margin: 0;
+    margin: 20px 0 0 0;
     padding: 0;
     width: 100%;
     border-bottom: 1px solid #d5dbe0;
     font-face: "Open Sans", sans-serif;
-    font-size: .9vw;
+    font-size: 1vw;
     color: #1f87c7;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     font-weight: bold; }
   .app-sidebar .sidebar-steps {
     padding: 0;
@@ -115,22 +114,18 @@
     list-style-type: none;
     text-align: left; }
     .app-sidebar .sidebar-steps li {
-      font-family: "Open Sans", sans-serif; }
-      .app-sidebar .sidebar-steps li a {
-        color: #90b912;
-        text-decoration: none;
-        font-size: 1.8em; }
+      font-family: "Open Sans", sans-serif;
+      font-size: .8vw; }
     .app-sidebar .sidebar-steps span {
       display: block;
       width: 100%;
       color: #282828;
       font-family: "Open Sans Condensed", sans-serif; }
     .app-sidebar .sidebar-steps span:before {
-      font-size: 1.3em;
-      content: "   > "; }
+      content: "  + "; }
 
 .app-selection-container {
-  padding: 5px; }
+  padding: 15px; }
 
 .app-selection-panel {
   padding: 10px;
